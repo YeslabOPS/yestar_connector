@@ -5,11 +5,11 @@ influx = Influx()
 
 
 def if_proc(data: list):
-    if_start = []
+    if_status = []
     for if_dict in data:
         if if_dict['status'] != 'up':
-            if_start.append(if_dict['name'])
-    return if_start
+            if_status.append(if_dict['name'])
+    return if_status
 
 
 def route_proc(data: str):
