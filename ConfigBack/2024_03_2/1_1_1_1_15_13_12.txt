@@ -1,0 +1,50 @@
+{
+    "config": "\nhostname IOSXE\n"
+    "interfaces": [
+        {
+            "name": "GigabitEthernet1",
+            "ip": "192.168.1.100",
+            "status": "up"
+        },
+        {
+            "name": "GigabitEthernet2",
+            "ip": "10.1.1.1",
+            "status": "up"
+        },
+        {
+            "name": "GigabitEthernet3",
+            "ip": "unassigned",
+            "status": "up"
+        },
+        {
+            "name": "GigabitEthernet4",
+            "ip": "unassigned",
+            "status": "up"
+        }
+    ],
+    "routeTable": "      10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks\nC        10.1.1.0/24 is directly connected, GigabitEthernet2\nL        10.1.1.1/32 is directly connected, GigabitEthernet2\n      172.16.0.0/24 is subnetted, 1 subnets\nS        172.16.10.0 [1/0] via 10.1.1.100\n      192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks\nC        192.168.1.0/24 is directly connected, GigabitEthernet1\nL        192.168.1.100/32 is directly connected, GigabitEthernet1",
+    "monitor": {
+        "cpu": {
+            "cpu1_5s": "0",
+            "cpu2_5s": "0",
+            "cpu1_1m": "0",
+            "cpu1_5m": "0"
+        }
+    }
+    "monitor": {
+        "cpu": {
+            "cpu0": {
+                "cpu_current": "5%",
+                "cpu_5sec": "0%",
+                "cpu_1min": "0%",
+                "cpu_5min": "0%"
+            },
+            "cpu1": {
+                "cpu_current": "2%",
+                "cpu_5sec": "0%",
+                "cpu_1min": "0%",
+                "cpu_5min": "0%"
+            }
+        }
+    }
+}
